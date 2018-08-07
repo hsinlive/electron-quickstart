@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom'
 import styled from 'styled-components'
 
 const Wrap = styled.div`
-text-align: center;
+  text-align: center;
 `
 
 class App extends React.Component {
   render() {
     return (
-      <div>Hello World</div>
+      <Wrap>
+        Hello World
+      </Wrap>
     )
   }
 }
