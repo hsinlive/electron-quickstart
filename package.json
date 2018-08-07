@@ -6,6 +6,7 @@
   "author": "hsinlive <hsinlive@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "eslint": "eslint src/",
     "build": "rm -rf dist/ && webpack",
     "start": "electron .",
     "dev": "yarn build && yarn start",
@@ -14,6 +15,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
@@ -23,6 +25,11 @@
     "electron": "^2.0.6",
     "electron-builder": "^20.26.1",
     "electron-reload": "^1.2.5",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8",
