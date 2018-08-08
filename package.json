@@ -6,6 +6,7 @@
   "author": "hsinlive <hsinlive@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "postinstall": "electron-rebuild -f",
     "eslint": "eslint src/",
     "build": "rm -rf dist/ && webpack",
     "start": "electron .",
@@ -23,6 +24,7 @@
     "babel-preset-stage-3": "^6.24.1",
     "css-loader": "^1.0.0",
     "electron-builder": "^20.26.1",
+    "electron-rebuild": "^1.8.2",
     "electron-reload": "^1.2.5",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
