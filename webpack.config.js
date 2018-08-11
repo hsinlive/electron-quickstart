@@ -9,7 +9,9 @@ module.exports = [{
     path: path.join(__dirname, 'dist/'),
     filename: 'index_bundle.js',
   },
-  externals: [nodeExternals()],
+  externals: [nodeExternals({
+    whitelist: [/antd/, /^rc-/],
+  })],
   module: {
     rules: [
       {
